@@ -16,8 +16,6 @@ describe("TransactionRepository", () => {
     });
     
     it("should store a deposit transaction", () => {
-        const repository = new TransactionRepository(clock);
-        
         repository.addDeposit(500);
         
         expect(repository.getAllTransactions().length).toEqual(1);
@@ -25,8 +23,6 @@ describe("TransactionRepository", () => {
     });
     
     it("should store a withdraw transaction", () => {
-        const repository = new TransactionRepository(clock);
-        
         repository.addWithdraw(400);
         
         expect(repository.getAllTransactions().length).toEqual(1);
