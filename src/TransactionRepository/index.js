@@ -1,1 +1,1 @@
-export {default} from "./TransactionRepository";
+export { default } from "./TransactionRepository";

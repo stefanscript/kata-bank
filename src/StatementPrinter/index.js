@@ -1,1 +1,1 @@
-export {default} from "./StatementPrinter";
+export { default } from "./StatementPrinter";
